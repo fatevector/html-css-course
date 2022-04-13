@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="petrov, ivan, resume">
     <meta name="description" content="Этот сайт - резюме Петрова Ивана">
+    <link rel="stylesheet" href="styles.css">
     <title>Резюме</title>
 </head>
+
 <body>
-    <div>
-        <img src="imgs/myPhoto.jpeg" alt=" фото профиля" width="300">
-    </div>
+    <div class="container">
+        <div class="info">
+            <img src="imgs/myPhoto.jpeg" alt=" фото профиля" class="avatar">
 
-    <div>
-        <h1>Петров Иван</h1>
-    </div>
+            <div class="info-text">
+                <h1>Петров Иван</h1>
 
-    <section>
-        <article>Я студент 3-го курса <strong>МГТУ им. Н.Э.Баумана</strong> кафедры ИУ5 <em>"Системы обработки информации и управления"</em></article>
-        <article>Я люблю <em>читать мангу, заниматься спортом и программировать</em></article>
-    </section>
+                <p>Я студент 3-го курса <strong>МГТУ им. Н.Э.Баумана</strong> кафедры ИУ5 <em>"Системы обработки
+                        информации
+                        и управления"</em></p>
+                <p>Я люблю <em>читать мангу, заниматься спортом и программировать</em></p>
 
-    <div>
-        <h4>Мои социальные сети:</h4>
-        <a href="https://vk.com/arslane2000" target="_blank">VK</a> |
-        <a href="https://github.com/fatevector" target="_blank">GitHub</a>
-    </div>
+                <div>
+                    <h4>Мои социальные сети:</h4>
+                    <a href="https://vk.com/arslane2000" target="_blank">VK</a> |
+                    <a href="https://github.com/fatevector" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
 
-    <div>
-        <h2>Мои хобби</h2>
-        <ul>
-            <li>Сноуборд</li>
-            <li>Фотография</li>
-            <li>Игры</li>
-        </ul>
-    </div>
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
 
-    <div>
-        <h2>Образование</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Место</th>
-                    <th>Уровень</th>
-                    <th>Год</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>МГТУ им. Н.Э.Баумана</td>
-                    <td>Неполное высшее</td>
-                    <td>2019-сейчас</td>
-                </tr>
-                <tr>
-                    <td>МБОУ-гимназия №19 г. Орел</td>
-                    <td>Среднее общее</td>
-                    <td>2008-2019</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div>
-        <h2>Связаться со мной</h2>
-        <form>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-            <br>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-            <br>
-            <label for="tel">Ваш номер телефона:</label>
-            <input type="tel" id="tel" placeholder="Введите номер">
-            <br>
-            <label for="massege">Ваше сообщение:</label>
-            <br>
-            <textarea id="massege" cols="20" rows="5" placeholder="Ваше сообщение..."></textarea>
-            <br>
-            <button type="reset">Очистить форму</button>
-            <button type="submit">Отправить</button>
-        </form>
+            <ul class="list">
+                <li>Сноуборд</li>
+                <li>Фотография</li>
+                <li>Игры</li>
+            </ul>
+        </div>
+
+        <div class="card bg-red">
+            <h2>Образование</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Место</th>
+                        <th>Уровень</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>МГТУ им. Н.Э.Баумана</td>
+                        <td>Неполное высшее</td>
+                        <td>2019-сейчас</td>
+                    </tr>
+                    <tr>
+                        <td>МБОУ-гимназия №19 г. Орел</td>
+                        <td>Среднее общее</td>
+                        <td>2008-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card bg-yellow">
+            <h2>Пройденные курсы</h2>
+
+            <ul class="link-list">
+                <li>Курс по frontend-разработке в МГТУ им. Н.Э.Баумана</li>
+                <li><a href="https://vladilen.ru/beginner?utm_source=youtube&utm_medium=video_link&utm_campaign=HTML_CSS"
+                        target="_blank">Курс HTML&CSS от Владилена Минина</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label for="tel">Ваш номер телефона:</label>
+                    <input type="tel" id="tel" placeholder="Введите номер">
+                </div> -->
+
+                <div class="form-group">
+                    <label for="massege">Ваше сообщение:</label>
+                    <textarea id="massege" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+
+                <div class="btns">
+                    <button type="reset" class="btn">Очистить форму</button>
+                    <button type="submit" class="btn">Отправить</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
